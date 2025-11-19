@@ -1,25 +1,21 @@
 # DSB--SC-MODULATION-AND-DEMODULATION-USING-PYTHON
 
-__AIM__:
-
+# AIM:
 To generate a Double Sideband Suppressed Carrier (DSB-SC) signal in Python (Google Colab), transmit it (optionally add noise), and recover the message using coherent (synchronous) demodulation with a low-pass filter. Observe time and frequency domain waveforms and measure demodulation performance
 
-__APPARATUS REQUIRED__:
-
+# APPARATUS REQUIRED:
 Google Colab (or any Python environment)
 
 Python libraries: numpy, matplotlib, scipy (scipy.signal)
 
-__Theory__:
-
+# Theory:
 DSB-SC signal: s(t) = m(t) · cos(2πf_c t)
 Coherent demodulation: multiply received s(t) by a synchronized carrier cos(2πf_c t) then low-pass filter (LPF) to remove double-frequency components:
 
 r(t) = s(t)·cos(2πf_c t) = m(t)·cos²(2πf_c t) = 0.5 m(t) + 0.5 m(t)·cos(4πf_c t)
 LPF extracts 0.5·m(t) → scale by 2 to recover m(t).
 
-__Procedure__:
-
+# Procedure:
 1) Import libraries and set parameters
 2) Define message and carrier signals
 3) Generate DSB-SC signal (modulation)
@@ -28,8 +24,11 @@ __Procedure__:
 6) Coherent demodulation (multiply by synchronized carrier)
 7) Low-pass filter to recover message
 
-   __Tabulation__:
+# Tabulation:
+![WhatsApp Image 2025-11-16 at 22 43 13_da99ecbc](https://github.com/user-attachments/assets/0d56cbd7-b999-41f4-883a-37cb33f936a4)
 
-   __Output__:
+# Output:
+<img width="1003" height="590" alt="image" src="https://github.com/user-attachments/assets/eebaa47f-8734-4eee-854a-8c1f52b025d6" />
 
-   __Result__:
+# Result:
+![WhatsApp Image 2025-11-16 at 22 43 46_7145d1d0](https://github.com/user-attachments/assets/5e24aae1-0362-4cf0-988f-da11cb70155e)
